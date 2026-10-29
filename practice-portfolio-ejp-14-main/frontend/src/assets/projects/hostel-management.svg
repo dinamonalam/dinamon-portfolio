@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hostel-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="hostel-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="hostel-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="hostel-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="hostel-indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#hostel-bg)"/>
+
+  <!-- Top Navbar -->
+  <rect x="0" y="0" width="1200" height="65" fill="#111827" fill-opacity="0.95" />
+  <line x1="0" y1="65" x2="1200" y2="65" stroke="#334155" stroke-width="1" />
+  
+  <!-- Logo & Title -->
+  <rect x="30" y="16" width="34" height="34" rx="8" fill="url(#hostel-blue)" />
+  <!-- Hostel / Building Icon in Logo -->
+  <path d="M40 40 L40 26 L47 21 L54 26 L54 40 Z" fill="#ffffff" />
+  <text x="75" y="38" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700">HostelMS<tspan fill="#38bdf8">.Portal</tspan></text>
+  
+  <!-- Search input mock -->
+  <rect x="250" y="17" width="340" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="270" cy="33" r="5" stroke="#64748b" stroke-width="1.8" fill="none"/>
+  <line x1="274" y1="37" x2="279" y2="42" stroke="#64748b" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="290" y="38" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Search students, rooms, fee vouchers...</text>
+  
+  <!-- Admin profile top-right -->
+  <rect x="1030" y="15" width="140" height="36" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="1048" cy="33" r="12" fill="url(#hostel-indigo)" />
+  <text x="1048" y="37" fill="#ffffff" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">A</text>
+  <text x="1068" y="37" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Admin</text>
+
+  <!-- Left Sidebar Navigation -->
+  <rect x="0" y="65" width="220" height="610" fill="#0b1329" fill-opacity="0.85" />
+  <line x1="220" y1="65" x2="220" y2="675" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Nav Items -->
+  <!-- Active Item: Dashboard -->
+  <rect x="16" y="90" width="188" height="38" rx="8" fill="url(#hostel-blue)" />
+  <text x="45" y="114" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Dashboard</text>
+
+  <!-- Inactive Nav Items -->
+  <g fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="500">
+    <text x="45" y="156">Rooms &amp; Beds</text>
+    <text x="45" y="196">Student Records</text>
+    <text x="45" y="236">Fee Collection</text>
+    <text x="45" y="276">Visitor Logbook</text>
+    <text x="45" y="316">Hostel Staff</text>
+    <text x="45" y="356">Monthly Reports</text>
+    <text x="45" y="396">Settings</text>
+  </g>
+
+  <!-- Sidebar Status Box -->
+  <rect x="16" y="550" width="188" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="34" cy="572" r="4" fill="#10b981" />
+  <text x="44" y="576" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Server Online</text>
+  <text x="28" y="600" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">PHP 8.2 • MySQL</text>
+  <text x="28" y="622" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">v1.2.0 • Academic Build</text>
+
+  <!-- Main Content Header -->
+  <text x="255" y="112" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">Hostel Management Dashboard</text>
+  <text x="255" y="134" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">Real-time room occupancy, resident verification &amp; accounting statistics</text>
+
+  <!-- Action button top right of dashboard -->
+  <rect x="1000" y="96" width="170" height="36" rx="8" fill="url(#hostel-emerald)" filter="url(#shadow)" />
+  <text x="1085" y="119" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">+ New Student Admission</text>
+
+  <!-- 4 Stats KPI Cards -->
+  <!-- Stat Card 1: Total Students -->
+  <g transform="translate(255, 160)" filter="url(#shadow)">
+    <rect width="210" height="96" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">TOTAL RESIDENTS</text>
+    <text x="20" y="68" fill="#ffffff" font-family="system-ui, sans-serif" font-size="26" font-weight="800">384</text>
+    <rect x="145" y="24" width="45" height="45" rx="10" fill="url(#hostel-blue)" fill-opacity="0.2"/>
+    <circle cx="167" cy="46" r="10" fill="#3b82f6"/>
+    <text x="20" y="86" fill="#10b981" font-family="system-ui, sans-serif" font-size="10" font-weight="600">↑ 18 new this semester</text>
+  </g>
+
+  <!-- Stat Card 2: Occupied Rooms -->
+  <g transform="translate(490, 160)" filter="url(#shadow)">
+    <rect width="210" height="96" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">ROOM OCCUPANCY</text>
+    <text x="20" y="68" fill="#ffffff" font-family="system-ui, sans-serif" font-size="26" font-weight="800">142<tspan fill="#64748b" font-size="16"> / 160</tspan></text>
+    <rect x="145" y="24" width="45" height="45" rx="10" fill="url(#hostel-indigo)" fill-opacity="0.2"/>
+    <circle cx="167" cy="46" r="10" fill="#6366f1"/>
+    <text x="20" y="86" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10" font-weight="600">88.7% Capacity</text>
+  </g>
+
+  <!-- Stat Card 3: Available Beds -->
+  <g transform="translate(725, 160)" filter="url(#shadow)">
+    <rect width="210" height="96" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">VACANT BEDS</text>
+    <text x="20" y="68" fill="#10b981" font-family="system-ui, sans-serif" font-size="26" font-weight="800">36</text>
+    <rect x="145" y="24" width="45" height="45" rx="10" fill="url(#hostel-emerald)" fill-opacity="0.2"/>
+    <circle cx="167" cy="46" r="10" fill="#10b981"/>
+    <text x="20" y="86" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Available for allocation</text>
+  </g>
+
+  <!-- Stat Card 4: Fee Dues -->
+  <g transform="translate(960, 160)" filter="url(#shadow)">
+    <rect width="210" height="96" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="32" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12" font-weight="600">COLLECTION STATUS</text>
+    <text x="20" y="68" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="26" font-weight="800">94.2%</text>
+    <rect x="145" y="24" width="45" height="45" rx="10" fill="url(#hostel-amber)" fill-opacity="0.2"/>
+    <circle cx="167" cy="46" r="10" fill="#f59e0b"/>
+    <text x="20" y="86" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="10" font-weight="600">22 Pending dues</text>
+  </g>
+
+  <!-- Main Management Table (Bottom Card) -->
+  <g transform="translate(255, 280)" filter="url(#shadow)">
+    <rect width="915" height="360" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Table Header Bar -->
+    <rect x="0" y="0" width="915" height="52" rx="14" fill="#0f172a" fill-opacity="0.7"/>
+    <line x1="0" y1="52" x2="915" y2="52" stroke="#334155" stroke-width="1" />
+    <text x="24" y="32" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Recent Student Allocations &amp; Room Records</text>
+    
+    <!-- Table Column Titles -->
+    <text x="24" y="78" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">STUDENT ID &amp; NAME</text>
+    <text x="260" y="78" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ROOM / BLOCK</text>
+    <text x="410" y="78" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ROOM CATEGORY</text>
+    <text x="590" y="78" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CHECK-IN DATE</text>
+    <text x="750" y="78" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">FEE STATUS</text>
+    <line x1="0" y1="92" x2="915" y2="92" stroke="#334155" stroke-width="1" />
+
+    <!-- Row 1 -->
+    <circle cx="36" cy="120" r="14" fill="#3b82f6" fill-opacity="0.2"/>
+    <text x="36" y="124" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">DA</text>
+    <text x="62" y="118" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Dinamon Alam Aymin</text>
+    <text x="62" y="132" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">ID: CSE-2024-082</text>
+    <text x="260" y="125" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12">Room 304 (Block-B)</text>
+    <rect x="410" y="112" width="85" height="22" rx="6" fill="#3b82f6" fill-opacity="0.15" />
+    <text x="452" y="127" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Single • AC</text>
+    <text x="590" y="125" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Jan 12, 2026</text>
+    <rect x="750" y="112" width="70" height="22" rx="6" fill="#10b981" fill-opacity="0.15" />
+    <text x="785" y="127" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Paid</text>
+    <line x1="20" y1="148" x2="895" y2="148" stroke="#334155" stroke-width="0.8" />
+
+    <!-- Row 2 -->
+    <circle cx="36" cy="176" r="14" fill="#6366f1" fill-opacity="0.2"/>
+    <text x="36" y="180" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">TR</text>
+    <text x="62" y="174" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Tanvir Rahman</text>
+    <text x="62" y="188" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">ID: EEE-2024-019</text>
+    <text x="260" y="181" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12">Room 201 (Block-A)</text>
+    <rect x="410" y="168" width="95" height="22" rx="6" fill="#6366f1" fill-opacity="0.15" />
+    <text x="457" y="183" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Double Shared</text>
+    <text x="590" y="181" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Jan 15, 2026</text>
+    <rect x="750" y="168" width="70" height="22" rx="6" fill="#10b981" fill-opacity="0.15" />
+    <text x="785" y="183" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Paid</text>
+    <line x1="20" y1="204" x2="895" y2="204" stroke="#334155" stroke-width="0.8" />
+
+    <!-- Row 3 -->
+    <circle cx="36" cy="232" r="14" fill="#f59e0b" fill-opacity="0.2"/>
+    <text x="36" y="236" fill="#fcd34d" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">SH</text>
+    <text x="62" y="230" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Sabbir Hossain</text>
+    <text x="62" y="244" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">ID: CSE-2024-114</text>
+    <text x="260" y="237" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12">Room 108 (Block-A)</text>
+    <rect x="410" y="224" width="95" height="22" rx="6" fill="#6366f1" fill-opacity="0.15" />
+    <text x="457" y="239" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Double Shared</text>
+    <text x="590" y="237" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Feb 01, 2026</text>
+    <rect x="750" y="224" width="70" height="22" rx="6" fill="#f59e0b" fill-opacity="0.15" />
+    <text x="785" y="239" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Pending</text>
+    <line x1="20" y1="260" x2="895" y2="260" stroke="#334155" stroke-width="0.8" />
+
+    <!-- Row 4 -->
+    <circle cx="36" cy="288" r="14" fill="#10b981" fill-opacity="0.2"/>
+    <text x="36" y="292" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">RA</text>
+    <text x="62" y="286" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Rifat Ahmed</text>
+    <text x="62" y="300" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">ID: BBA-2023-045</text>
+    <text x="260" y="293" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="12">Room 412 (Block-C)</text>
+    <rect x="410" y="280" width="85" height="22" rx="6" fill="#3b82f6" fill-opacity="0.15" />
+    <text x="452" y="295" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Triple Bed</text>
+    <text x="590" y="293" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Feb 10, 2026</text>
+    <rect x="750" y="280" width="70" height="22" rx="6" fill="#10b981" fill-opacity="0.15" />
+    <text x="785" y="295" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Paid</text>
+  </g>
+</svg>

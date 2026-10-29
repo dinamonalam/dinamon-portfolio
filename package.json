@@ -1,0 +1,12 @@
+{
+  "name": "practice-portfolio-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix practice-portfolio-ejp-14-main/frontend run dev",
+    "build": "npm --prefix practice-portfolio-ejp-14-main/frontend run build",
+    "preview": "npm --prefix practice-portfolio-ejp-14-main/frontend run preview",
+    "lint": "npm --prefix practice-portfolio-ejp-14-main/frontend run lint",
+    "install:all": "npm --prefix practice-portfolio-ejp-14-main/frontend install"
+  }
+}
