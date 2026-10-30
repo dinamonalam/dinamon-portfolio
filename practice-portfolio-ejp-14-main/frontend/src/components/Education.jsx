@@ -25,7 +25,7 @@ const educationHistory = [
     institution: "Chattogram Bandar Mohila College",
     location: "Chattogram, Bangladesh",
     period: "2020 – 2021",
-    grade: "GPA: 5.00 / 5.00 (A+)",
+    grade: "GPA: 4.33",
     description:
       "Completed higher secondary education with a major in Science, developing strong analytical thinking and mathematical problem-solving skills.",
     coursework: ["Physics", "Chemistry", "Higher Mathematics", "Information & Communication Tech (ICT)"],
@@ -35,7 +35,7 @@ const educationHistory = [
     institution: "P.H. Ameen Academy",
     location: "Chattogram, Bangladesh",
     period: "2018 – 2019",
-    grade: "GPA: 5.00 / 5.00 (A+)",
+    grade: "GPA: 5.00 ",
     description:
       "Graduated secondary school with distinction in Science, establishing foundational curiosity for science and computing.",
     coursework: ["Physics", "Chemistry", "Higher Mathematics", "Information & Communication Tech (ICT)"],
