@@ -103,7 +103,7 @@ const Contact = () => {
 
               {/* Phone */}
               <a
-                href="tel:01533500557"
+                href="tel:+8801533500557"
                 className="flex items-start gap-4 p-3.5 rounded-xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-cyan-500/40 transition group"
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-950/80 text-cyan-400 border border-blue-800/50 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -114,7 +114,7 @@ const Contact = () => {
                     Phone / WhatsApp
                   </span>
                   <span className="text-sm font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors">
-                    01533500557
+                    +880 1533500557
                   </span>
                 </div>
               </a>
@@ -149,7 +149,7 @@ const Contact = () => {
                     Location
                   </span>
                   <span className="text-sm font-semibold text-slate-200">
-                    Chattogram, Bangladesh (Remote / On-site)
+                    Halishahar, Chattogram, Bangladesh
                   </span>
                 </div>
               </div>
