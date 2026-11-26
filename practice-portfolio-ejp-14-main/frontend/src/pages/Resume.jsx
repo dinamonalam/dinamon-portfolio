@@ -1,21 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  HiArrowLeft,
-  HiPrinter,
-  HiDownload,
-  HiExternalLink,
-} from "react-icons/hi";
-import {
-  FaLinkedin,
-  FaGithub,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaUser,
-  FaBriefcase,
-  FaGraduationCap,
-} from "react-icons/fa";
-import profilePhoto from "../assets/profile.jpg";
+import { HiArrowLeft, HiPrinter, HiDownload, HiExternalLink } from "react-icons/hi";
 
 const Resume = () => {
   const handlePrint = () => {
@@ -23,7 +7,7 @@ const Resume = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#090d16] py-10 px-4 sm:px-6 lg:px-8 text-slate-800 font-sans print:bg-white print:py-0 print:px-0">
+    <div className="min-h-screen bg-[#090d16] py-10 px-4 sm:px-6 lg:px-8 text-gray-900 font-sans print:bg-white print:py-0 print:px-0">
       {/* Top Action Bar (Hidden during print) */}
       <div className="max-w-4xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-4 print:hidden">
         <Link
@@ -51,342 +35,281 @@ const Resume = () => {
         </div>
       </div>
 
-      {/* Main Resume Sheet */}
+      {/* Main Resume Sheet - ATS Single-Column Clean Style */}
       <div
-        className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200/80 print:shadow-none print:border-none print:rounded-none print:max-w-none print:w-full"
+        className="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl border border-gray-200/80 p-8 sm:p-14 print:shadow-none print:border-none print:rounded-none print:p-0 print:max-w-none print:w-full"
         style={{ WebkitPrintColorAdjust: "exact", printColorAdjust: "exact" }}
       >
-        {/* Top Header Banner */}
-        <header className="bg-[#2c3440] text-white flex flex-col sm:flex-row print:flex-row">
-          {/* Avatar Area (Altered to align with left sidebar) */}
-          <div className="w-full sm:w-[35%] print:w-[35%] bg-[#242b36] py-6 px-6 flex items-center justify-center">
-            <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-4 border-white shadow-lg bg-slate-900 shrink-0">
-              <img
-                src={profilePhoto}
-                alt="Dinamon Alam Aymin"
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
+        {/* Header Block */}
+        <header className="mb-6">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight uppercase">
+            DINAMON ALAM AYMIN
+          </h1>
+          <p className="text-base font-medium text-gray-800 mt-0.5 mb-2">
+            Front-End Developer
+          </p>
 
-          {/* Name & Title Banner */}
-          <div className="w-full sm:w-[65%] print:w-[65%] px-6 sm:px-10 py-6 sm:py-8 flex flex-col justify-center text-center sm:text-left print:text-left">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider uppercase text-white">
-              DINAMON ALAM AYMIN
-            </h1>
-            <p className="text-xs sm:text-sm font-medium tracking-[0.22em] text-slate-300 uppercase mt-1.5">
-              ASPIRING SOFTWARE DEVELOPER
+          <div className="text-xs sm:text-[13px] text-gray-800 space-y-0.5 leading-relaxed">
+            <p>
+              <span className="font-semibold text-gray-900">Phone:</span>{" "}
+              <a href="tel:+8801533500557" className="hover:underline">
+                +880 1533500557
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">Email:</span>{" "}
+              <a
+                href="mailto:dinamonalam@gmail.com"
+                className="text-blue-600 underline hover:text-blue-800"
+              >
+                dinamonalam@gmail.com
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">Address:</span>{" "}
+              Halishahar, Chattogram, Bangladesh
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">LinkedIn:</span>{" "}
+              <a
+                href="https://linkedin.com/in/dinamonalamaymin"
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-600 underline hover:text-blue-800"
+              >
+                linkedin.com/in/dinamonalamaymin
+              </a>
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">GitHub:</span>{" "}
+              <a
+                href="https://github.com/dinamonalam"
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-600 underline hover:text-blue-800"
+              >
+                github.com/dinamonalam
+              </a>
             </p>
           </div>
         </header>
 
-        {/* Two-Column Body */}
-        <div className="flex flex-col sm:flex-row print:flex-row min-h-[700px]">
-          {/* Left Column (Sidebar) */}
-          <aside className="w-full sm:w-[35%] print:w-[35%] bg-[#edf1f7] p-6 sm:p-7 space-y-7 border-r border-gray-200/60 print:bg-[#edf1f7]">
-            {/* Contact Section */}
+        {/* Section: Career Objective */}
+        <section className="mb-5">
+          <div className="border-b border-gray-900 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold tracking-wider uppercase text-gray-900">
+              CAREER OBJECTIVE
+            </h2>
+          </div>
+          <p className="text-xs sm:text-[13px] text-gray-800 leading-relaxed text-justify">
+            Computer Science and Engineering student passionate about web
+            development, with hands-on experience building projects using React,
+            Next.js, Tailwind CSS, MongoDB and MySQL. Seeking a front-end
+            developer role where I can sharpen my programming and
+            problem-solving skills and contribute to real-world products.
+          </p>
+        </section>
+
+        {/* Section: Skills */}
+        <section className="mb-5">
+          <div className="border-b border-gray-900 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold tracking-wider uppercase text-gray-900">
+              SKILLS
+            </h2>
+          </div>
+          <div className="text-xs sm:text-[13px] text-gray-800 space-y-1 leading-relaxed">
+            <p>
+              <span className="font-bold text-gray-900">Languages:</span>{" "}
+              HTML5, CSS3, JavaScript, TypeScript
+            </p>
+            <p>
+              <span className="font-bold text-gray-900">
+                Frameworks &amp; Libraries:
+              </span>{" "}
+              React.js, Next.js, Node.js, Express.js, Tailwind CSS, Better Auth,
+              JWT
+            </p>
+            <p>
+              <span className="font-bold text-gray-900">Database:</span>{" "}
+              MongoDB, MySQL
+            </p>
+            <p>
+              <span className="font-bold text-gray-900">
+                Interpersonal Skills:
+              </span>{" "}
+              Problem Solving, Teamwork, Time Management, Adaptability, Digital
+              Marketing
+            </p>
+          </div>
+        </section>
+
+        {/* Section: Projects */}
+        <section className="mb-5">
+          <div className="border-b border-gray-900 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold tracking-wider uppercase text-gray-900">
+              PROJECTS
+            </h2>
+          </div>
+
+          <div className="space-y-4 text-xs sm:text-[13px] text-gray-800">
+            {/* Project 1: FixMate */}
             <div>
-              <h2 className="text-[#2c3440] font-black text-sm tracking-widest uppercase border-b-2 border-[#2c3440] pb-1.5 mb-3.5">
-                CONTACT
-              </h2>
-              <div className="space-y-3 text-xs leading-snug text-gray-700">
-                <a
-                  href="https://www.linkedin.com/in/dinamonalamaymin/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-start gap-2.5 hover:text-blue-600 transition group"
-                >
-                  <FaLinkedin className="text-sm text-[#2c3440] shrink-0 mt-0.5 group-hover:text-blue-600" />
-                  <span className="break-all font-medium">
-                    linkedin.com/in/dinamonalamaymin
-                  </span>
-                </a>
-
-                <a
-                  href="https://github.com/dinamonalam"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-start gap-2.5 hover:text-blue-600 transition group"
-                >
-                  <FaGithub className="text-sm text-[#2c3440] shrink-0 mt-0.5 group-hover:text-blue-600" />
-                  <span className="break-all font-medium">
-                    https://github.com/dinamonalam
-                  </span>
-                </a>
-
-                <a
-                  href="tel:+8801533500557"
-                  className="flex items-start gap-2.5 hover:text-blue-600 transition group"
-                >
-                  <FaPhoneAlt className="text-xs text-[#2c3440] shrink-0 mt-0.5 group-hover:text-blue-600" />
-                  <span className="font-medium">+880 1533500557</span>
-                </a>
-
-                <a
-                  href="mailto:dinamonalam@gmail.com"
-                  className="flex items-start gap-2.5 hover:text-blue-600 transition group"
-                >
-                  <FaEnvelope className="text-xs text-[#2c3440] shrink-0 mt-0.5 group-hover:text-blue-600" />
-                  <span className="break-all font-medium">
-                    dinamonalam@gmail.com
-                  </span>
-                </a>
-
-                <div className="flex items-start gap-2.5">
-                  <FaMapMarkerAlt className="text-xs text-[#2c3440] shrink-0 mt-0.5" />
-                  <span className="font-medium">
-                    Halishahar, Chattogram, Bangladesh
-                  </span>
-                </div>
+              <div className="font-bold text-gray-900">
+                FixMate – Repair Platform{" "}
+                <span className="font-normal text-gray-700">
+                  | Next.js, React, Tailwind CSS, Node.js, Express.js, MongoDB,
+                  Stripe
+                </span>
               </div>
-            </div>
-
-            {/* Skills Section */}
-            <div>
-              <h2 className="text-[#2c3440] font-black text-sm tracking-widest uppercase border-b-2 border-[#2c3440] pb-1.5 mb-3.5">
-                SKILLS
-              </h2>
-
-              {/* Personal Skills */}
-              <div className="mb-4">
-                <h3 className="text-[11px] font-bold tracking-wider uppercase text-gray-800 mb-2">
-                  PERSONAL SKILLS
-                </h3>
-                <ul className="space-y-1.5 text-xs text-gray-700 pl-3">
-                  <li className="list-disc marker:text-[#2c3440]">
-                    Problem Solving
-                  </li>
-                  <li className="list-disc marker:text-[#2c3440]">Teamwork</li>
-                  <li className="list-disc marker:text-[#2c3440]">
-                    Time Management
-                  </li>
-                  <li className="list-disc marker:text-[#2c3440]">
-                    Adaptability
-                  </li>
-                  <li className="list-disc marker:text-[#2c3440]">
-                    Digital Marketing
-                  </li>
-                </ul>
+              <p className="text-gray-800 mt-0.5">
+                A full-stack repair booking platform for phones, laptops and home
+                appliances, with role-based access for customers, technicians
+                and admins.
+              </p>
+              <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                <span>
+                  <strong className="font-semibold text-gray-900">Live:</strong>{" "}
+                  <a
+                    href="https://fixmate-repair.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800 inline-flex items-center gap-0.5"
+                  >
+                    fixmate-repair.vercel.app{" "}
+                    <HiExternalLink className="text-[11px] print:hidden" />
+                  </a>
+                </span>
+                <span className="text-gray-400">•</span>
+                <span>
+                  <strong className="font-semibold text-gray-900">
+                    GitHub:
+                  </strong>{" "}
+                  <a
+                    href="https://github.com/dinamonalam/fixmate_client"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800 inline-flex items-center gap-0.5"
+                  >
+                    Client{" "}
+                    <HiExternalLink className="text-[11px] print:hidden" />
+                  </a>
+                  {" | "}
+                  <a
+                    href="https://github.com/dinamonalam/fixmate_server"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800 inline-flex items-center gap-0.5"
+                  >
+                    Server{" "}
+                    <HiExternalLink className="text-[11px] print:hidden" />
+                  </a>
+                </span>
               </div>
-
-              {/* Technical Skills */}
-              <div>
-                <h3 className="text-[11px] font-bold tracking-wider uppercase text-gray-800 mb-2">
-                  TECHNICAL SKILLS
-                </h3>
-                <ul className="space-y-1.5 text-xs text-gray-700 pl-3">
-                  <li className="list-disc marker:text-[#2c3440]">HTML5</li>
-                  <li className="list-disc marker:text-[#2c3440]">CSS3</li>
-                  <li className="list-disc marker:text-[#2c3440]">
-                    Tailwind CSS
-                  </li>
-                  <li className="list-disc marker:text-[#2c3440]">JavaScript</li>
-                  <li className="list-disc marker:text-[#2c3440]">TypeScript</li>
-                  <li className="list-disc marker:text-[#2c3440]">React.js</li>
-                  <li className="list-disc marker:text-[#2c3440]">Next.js</li>
-                  <li className="list-disc marker:text-[#2c3440]">MySQL</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Languages Section */}
-            <div>
-              <h2 className="text-[#2c3440] font-black text-sm tracking-widest uppercase border-b-2 border-[#2c3440] pb-1.5 mb-3.5">
-                LANGUAGES
-              </h2>
-              <ul className="space-y-1.5 text-xs text-gray-700 pl-3">
-                <li className="list-disc marker:text-[#2c3440]">
-                  English - Intermediate
+              <ul className="list-disc pl-5 mt-1 space-y-0.5 text-gray-800 leading-relaxed">
+                <li>
+                  Role-based dashboards and JWT authentication for customers,
+                  technicians and admins
                 </li>
-                <li className="list-disc marker:text-[#2c3440]">
-                  Bangla - Native
+                <li>
+                  Repair booking with a job tracking timeline from request to
+                  payment
                 </li>
-                <li className="list-disc marker:text-[#2c3440]">
-                  Hindi - Basic
+                <li>
+                  Server-side search, filter, sort and pagination on services
+                </li>
+                <li>
+                  Stripe Checkout payments with webhook handling and printable
+                  invoice
                 </li>
               </ul>
             </div>
-          </aside>
 
-          {/* Right Column (Main Content) */}
-          <main className="w-full sm:w-[65%] print:w-[65%] p-6 sm:p-9 bg-white space-y-7">
-            {/* Profile Section */}
-            <div className="relative pl-7 border-l-2 border-gray-300">
-              <div className="absolute -left-[13px] top-0 w-6 h-6 rounded-full bg-[#2c3440] text-white flex items-center justify-center text-xs shadow-sm">
-                <FaUser className="text-[11px]" />
+            {/* Project 2: Hostel Management System */}
+            <div>
+              <div className="font-bold text-gray-900">
+                Hostel Management System{" "}
+                <span className="font-normal text-gray-700">
+                  | HTML, CSS, PHP, MySQL
+                </span>
               </div>
+              <p className="text-gray-800 mt-0.5">
+                A web-based system to manage hostel student records and room
+                allocation.
+              </p>
+              <p className="text-gray-700 mt-0.5">
+                Admin-only private system, so no public live link.{" "}
+                <a
+                  href="https://github.com/dinamonalam/Hostel_Management"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-600 underline hover:text-blue-800 print:hidden text-xs"
+                >
+                  (GitHub Repo)
+                </a>
+              </p>
+              <ul className="list-disc pl-5 mt-1 space-y-0.5 text-gray-800 leading-relaxed">
+                <li>Student record management</li>
+                <li>Room management and allocation</li>
+                <li>MySQL database for storing and retrieving data</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-              <h2 className="text-sm font-black text-[#2c3440] tracking-widest uppercase mb-2">
-                PROFILE
-              </h2>
-              <p className="text-xs sm:text-[13px] text-gray-700 leading-relaxed text-justify">
-                Computer Science and Engineering student with an interest in web
-                development and software development. Experienced in building
-                academic projects using modern web technologies and databases.
-                Eager to improve programming and problem-solving skills while
-                gaining practical experience.
+        {/* Section: Education */}
+        <section className="mb-5">
+          <div className="border-b border-gray-900 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold tracking-wider uppercase text-gray-900">
+              EDUCATION
+            </h2>
+          </div>
+
+          <div className="space-y-2.5 text-xs sm:text-[13px] text-gray-800">
+            {/* Degree 1 */}
+            <div>
+              <div className="flex items-baseline justify-between">
+                <span className="font-bold text-gray-900">
+                  B.Sc. in Computer Science &amp; Engineering (CSE)
+                </span>
+                <span className="text-gray-800 font-normal shrink-0">
+                  2024 – 2027 (Expected)
+                </span>
+              </div>
+              <p className="text-gray-700">
+                Port City International University, Chattogram
               </p>
             </div>
 
-            {/* Projects Section */}
-            <div className="relative pl-7 border-l-2 border-gray-300 space-y-4">
-              <div className="absolute -left-[13px] top-0 w-6 h-6 rounded-full bg-[#2c3440] text-white flex items-center justify-center text-xs shadow-sm">
-                <FaBriefcase className="text-[11px]" />
+            {/* Degree 2 */}
+            <div>
+              <div className="flex items-baseline justify-between">
+                <span className="font-bold text-gray-900">
+                  Higher Secondary Certificate (HSC) – Science
+                </span>
+                <span className="text-gray-800 font-normal shrink-0">
+                  2020 – 2021
+                </span>
               </div>
-
-              <h2 className="text-sm font-black text-[#2c3440] tracking-widest uppercase">
-                PROJECTS
-              </h2>
-
-              <div className="space-y-3.5 text-xs sm:text-[13px]">
-                {/* Project 1: FitLog */}
-                <div>
-                  <div className="flex items-center justify-between flex-wrap gap-1">
-                    <h3 className="font-bold text-gray-900">
-                      FitLog – Workout Library &amp; Tracker
-                    </h3>
-                    <div className="flex items-center gap-2 text-[11px] print:hidden">
-                      <a
-                        href="https://fitlog-sigma-eight.vercel.app/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-blue-600 hover:underline font-semibold inline-flex items-center gap-0.5"
-                      >
-                        Live Demo <HiExternalLink className="text-xs" />
-                      </a>
-                      <span className="text-gray-300">•</span>
-                      <a
-                        href="https://github.com/dinamonalam/fitlog"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-gray-700 hover:underline font-semibold inline-flex items-center gap-0.5"
-                      >
-                        GitHub <HiExternalLink className="text-xs" />
-                      </a>
-                    </div>
-                  </div>
-                  <ul className="mt-1 pl-4 text-gray-700 leading-relaxed">
-                    <li className="list-disc">
-                      Developed a fitness web app using Next.js, React, and
-                      Tailwind CSS with exercise discovery and workout tracking
-                      features.
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Project 2: Hostel Management */}
-                <div>
-                  <div className="flex items-center justify-between flex-wrap gap-1">
-                    <h3 className="font-bold text-gray-900">
-                      Hostel Management System
-                    </h3>
-                    <a
-                      href="https://github.com/dinamonalam/Hostel_Management"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-[11px] text-gray-700 hover:underline font-semibold inline-flex items-center gap-0.5 print:hidden"
-                    >
-                      GitHub <HiExternalLink className="text-xs" />
-                    </a>
-                  </div>
-                  <ul className="mt-1 pl-4 text-gray-700 leading-relaxed">
-                    <li className="list-disc">
-                      Developed a hostel management system using HTML, CSS, PHP,
-                      and MySQL for student records and room management.
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Project 3: Edu Ecosystem */}
-                <div>
-                  <h3 className="font-bold text-gray-900">Edu Ecosystem</h3>
-                  <ul className="mt-1 pl-4 text-gray-700 leading-relaxed">
-                    <li className="list-disc">
-                      Designed an academic software project to improve
-                      communication and information sharing among teachers,
-                      students, and parents.
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Project 4: SafeStep */}
-                <div>
-                  <h3 className="font-bold text-gray-900">
-                    SafeStep – Smart Assistive Stick
-                  </h3>
-                  <ul className="mt-1 pl-4 text-gray-700 leading-relaxed">
-                    <li className="list-disc">
-                      Proposed an Arduino-based smart stick with obstacle and water
-                      detection features for visually impaired individuals.
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <p className="text-gray-700">
+                Chattogram Bandar Mohila College | GPA: 4.33 / 5.00
+              </p>
             </div>
+          </div>
+        </section>
 
-            {/* Education Section */}
-            <div className="relative pl-7 border-l-2 border-gray-300 space-y-4">
-              <div className="absolute -left-[13px] top-0 w-6 h-6 rounded-full bg-[#2c3440] text-white flex items-center justify-center text-xs shadow-sm">
-                <FaGraduationCap className="text-[11px]" />
-              </div>
-
-              <h2 className="text-sm font-black text-[#2c3440] tracking-widest uppercase">
-                EDUCATION
-              </h2>
-
-              <div className="space-y-4 text-xs sm:text-[13px]">
-                {/* Degree 1 */}
-                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
-                  <div>
-                    <h3 className="font-bold text-gray-900">
-                      B.Sc. in Computer Science &amp; Engineering (CSE)
-                    </h3>
-                    <p className="text-gray-700">
-                      Port City International University
-                    </p>
-                  </div>
-                  <span className="text-[11px] sm:text-xs text-gray-600 sm:text-right font-medium shrink-0">
-                    2024–2027 (Expected)
-                  </span>
-                </div>
-
-                {/* Degree 2 */}
-                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
-                  <div>
-                    <h3 className="font-bold text-gray-900">
-                      Higher Secondary Certificate (HSC) – Science
-                    </h3>
-                    <p className="text-gray-700">
-                      Chattogram Bandar Mohila College
-                    </p>
-                    <p className="text-[11px] sm:text-xs font-semibold text-gray-800 mt-0.5">
-                      GPA: 4.33 / 5.00
-                    </p>
-                  </div>
-                  <span className="text-[11px] sm:text-xs text-gray-600 sm:text-right font-medium shrink-0">
-                    2020–2021
-                  </span>
-                </div>
-
-                {/* Degree 3 */}
-                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
-                  <div>
-                    <h3 className="font-bold text-gray-900">
-                      Secondary School Certificate (SSC) – Science
-                    </h3>
-                    <p className="text-gray-700">P.H. Ameen Academy</p>
-                    <p className="text-[11px] sm:text-xs font-semibold text-gray-800 mt-0.5">
-                      GPA: 5.00 / 5.00
-                    </p>
-                  </div>
-                  <span className="text-[11px] sm:text-xs text-gray-600 sm:text-right font-medium shrink-0">
-                    2018–2019
-                  </span>
-                </div>
-              </div>
-            </div>
-          </main>
-        </div>
+        {/* Section: Languages */}
+        <section>
+          <div className="border-b border-gray-900 pb-0.5 mb-2">
+            <h2 className="text-sm font-bold tracking-wider uppercase text-gray-900">
+              LANGUAGES
+            </h2>
+          </div>
+          <div className="text-xs sm:text-[13px] text-gray-800 space-y-0.5 leading-relaxed">
+            <p>English – Conversational</p>
+            <p>Bangla – Native</p>
+            <p>Hindi – Basic</p>
+          </div>
+        </section>
       </div>
     </div>
   );

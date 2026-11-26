@@ -17,6 +17,8 @@ import {
   SiNetlify,
   SiNextdotjs,
   SiVercel,
+  SiTypescript,
+  SiJsonwebtokens,
 } from "react-icons/si";
 import {
   HiOutlineCode,
@@ -47,6 +49,7 @@ const skillCategories = [
       { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
       { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" },
       { name: "JavaScript", icon: FaJsSquare, color: "text-yellow-500" },
+      { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
       { name: "React", icon: FaReact, color: "text-cyan-500" },
       { name: "Next.js", icon: SiNextdotjs, color: "text-slate-900" },
       { name: "Tailwind", icon: SiTailwindcss, color: "text-teal-500" },
@@ -65,6 +68,7 @@ const skillCategories = [
       { name: "Node.js", icon: FaNodeJs, color: "text-emerald-500" },
       { name: "Express", icon: SiExpress, color: "text-slate-700" },
       { name: "REST APIs", icon: HiOutlineGlobeAlt, color: "text-blue-600" },
+      { name: "JWT & Auth", icon: SiJsonwebtokens, color: "text-pink-500" },
       { name: "MongoDB", icon: SiMongodb, color: "text-emerald-600" },
       { name: "MySQL", icon: SiMysql, color: "text-sky-600" },
     ],
